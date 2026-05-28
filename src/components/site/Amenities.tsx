@@ -1,11 +1,17 @@
 import onsen from "@/assets/amenity-onsen.jpg";
 import pool from "@/assets/amenity-pool.jpg";
 import interior from "@/assets/interior.jpg";
+import amenity2 from "@/assets/amenity-2.jpg";
+import amenity3 from "@/assets/amenity-3.jpg";
+import masterAmenity from "@/assets/monrei-amenities-master.jpg";
 
 const items = [
   { img: onsen, t: "Liệu pháp trị liệu Nhật Bản", d: "Hệ thống Onsen & Jacuzzi nước khoáng nóng — thư giãn cơ bắp, tăng tuần hoàn máu, xoa dịu tâm trí.", tag: "ONSEN & JACUZZI" },
   { img: pool, t: "Vận động & Nước", d: "Hồ Aquatonic & Aqua Gym tập luyện hiện đại dưới nước. Áp lực nước tự nhiên massage, bảo vệ xương khớp.", tag: "AQUA GYM" },
-  { img: interior, t: "Hệ sinh thái All-in-One", d: "Trung tâm thương mại khối đế, hồ bơi tràn bờ view đại lộ, khu vui chơi sáng tạo — bảo mật an ninh đa lớp.", tag: "ALL-IN-ONE" },
+  { img: amenity2, t: "Hồ bơi tràn bờ", d: "Hồ bơi tràn bờ view đại lộ Bình Dương, không gian thư giãn giữa thiên nhiên xanh mát.", tag: "INFINITY POOL" },
+  { img: amenity3, t: "Steam & Sauna", d: "Phòng xông hơi khô và ướt chuẩn Nhật, giải độc cơ thể và phục hồi năng lượng.", tag: "STEAM & SAUNA" },
+  { img: interior, t: "Sky Lounge & BBQ", d: "Khu vực thư giãn trên cao, BBQ ngoài trời với tầm nhìn panorama toàn khu đô thị.", tag: "SKY LOUNGE" },
+  { img: masterAmenity, t: "Công viên mặt nước", d: "Hệ thống công viên mặt nước nội khu — trái tim xanh của Urban Hydrotherapy City.", tag: "WATER PARK" },
 ];
 
 export function Amenities() {
