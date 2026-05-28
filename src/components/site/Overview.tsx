@@ -1,3 +1,5 @@
+import overview from "@/assets/monrei-overview.jpg";
+
 const rows: [string, string][] = [
   ["Tên thương mại", "Monrei Saigon"],
   ["Vị trí chiến lược", "MT Nguyễn Thị Minh Khai, TP. Thuận An, Bình Dương"],
@@ -21,6 +23,7 @@ export function Overview() {
           <p className="text-sm tracking-[0.3em] font-semibold text-gold-foreground mb-3">— TỔNG QUAN —</p>
           <h2 className="text-4xl md:text-5xl font-bold text-primary">TỔNG QUAN DỰ ÁN MONREI SAIGON</h2>
         </div>
+        <img src={overview} alt="Phối cảnh tổng thể Monrei Saigon" className="w-full rounded-2xl shadow-elegant mb-10" loading="lazy" width={1600} height={900} />
         <div className="grid lg:grid-cols-2 gap-10 items-start">
           <div className="space-y-5 text-muted-foreground leading-relaxed">
             <p><strong className="text-foreground">Monrei Saigon</strong> là dự án phức hợp căn hộ cao cấp quy mô <strong>4,46 ha</strong>, kiệt tác kiến trúc định nghĩa lại chuẩn mực sống mới tại tâm điểm mặt tiền đường Nguyễn Thị Minh Khai, Thuận An. Với tổng vốn đầu tư <strong>18.000 tỷ đồng</strong> — tâm huyết của Mitsubishi Corporation, Tokyu Land và Phát Đạt.</p>
