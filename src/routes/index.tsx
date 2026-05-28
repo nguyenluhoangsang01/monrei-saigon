@@ -1,29 +1,40 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Header } from "@/components/site/Header";
+import { Hero } from "@/components/site/Hero";
+import { Overview } from "@/components/site/Overview";
+import { Location } from "@/components/site/Location";
+import { Amenities } from "@/components/site/Amenities";
+import { Masterplan } from "@/components/site/Masterplan";
+import { Developer } from "@/components/site/Developer";
+import { Contact } from "@/components/site/Contact";
+import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Monrei Saigon — Thành phố Thủy liệu đầu tiên tại Việt Nam | BTCLand" },
+      { name: "description", content: "Monrei Saigon — Urban Hydrotherapy City 4,46ha tại Thuận An, Bình Dương. CĐT Mitsubishi · Tokyu Land · Phát Đạt. Nhận bảng giá: 0356.99.01.99" },
+      { property: "og:title", content: "Monrei Saigon — BTCLand Vietnam phân phối" },
+      { property: "og:description", content: "Căn hộ cao cấp 4,46ha mặt tiền Nguyễn Thị Minh Khai, Thuận An. Onsen, Jacuzzi, Aqua Gym chuẩn Nhật." },
+      { property: "og:type", content: "website" },
     ],
+    links: [{ rel: "canonical", href: "/" }],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="min-h-screen bg-background">
+      <Header />
+      <Hero />
+      <Overview />
+      <Location />
+      <Amenities />
+      <Masterplan />
+      <Developer />
+      <Contact />
+      <Footer />
+    </main>
   );
 }
