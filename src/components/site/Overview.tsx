@@ -1,3 +1,5 @@
+import overview from "@/assets/monrei-overview.jpg";
+
 const rows: [string, string][] = [
   ["Tên thương mại", "Monrei Saigon"],
   ["Vị trí chiến lược", "MT Nguyễn Thị Minh Khai, TP. Thuận An, Bình Dương"],
